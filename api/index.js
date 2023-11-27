@@ -10,6 +10,8 @@ app.use(cors());
 app.listen(3000 || process.env.PORT, () => {
   console.log('Up and running!!');
 });
-app.get('/readallcells',getAllCells);
-app.post('/writecell',writeData);
-app.post('/deletecell',deleteData);
+app.get('/api/readallcells',getAllCells);
+app.post('/api/writecell',writeData);
+app.post('/api/deletecell',deleteData);
+
+module.exports=app;
