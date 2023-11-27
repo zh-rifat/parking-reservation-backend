@@ -1,7 +1,9 @@
 import {google} from 'googleapis';
 import dotenv from 'dotenv';
+import path from 'path';
+
 export const auth = new google.auth.GoogleAuth({
-  keyFile: '/config/credentials.json',
+  keyFile: path.resolve('./credentials.json'),
   scopes: 'https://www.googleapis.com/auth/spreadsheets'
 });
 dotenv.config();
