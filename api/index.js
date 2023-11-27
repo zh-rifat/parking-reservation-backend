@@ -14,4 +14,4 @@ app.get('/api/readallcells',getAllCells);
 app.post('/api/writecell',writeData);
 app.post('/api/deletecell',deleteData);
 
-module.exports=app;
+export default app;
