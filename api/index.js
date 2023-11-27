@@ -1,8 +1,8 @@
 
 import express from 'express';
 import cors from 'cors';
-import { getAllCells } from './routes/read.js';
-import { deleteData, writeData } from './routes/write.js';
+import { getAllCells } from '../routes/read.js';
+import { deleteData, writeData } from '../routes/write.js';
 const app = express();
 
 app.use(express.json());
